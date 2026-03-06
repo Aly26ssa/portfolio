@@ -236,20 +236,20 @@
         </div>
 
         <!-- Form Section -->
-        <form class="flex flex-col gap-6">
+        <form class="flex flex-col gap-6" action="https://formspree.io/f/xdawnvpr" method="POST">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div class="flex flex-col gap-2">
               <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Name</label>
-              <input class="w-full bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" placeholder="Jane Smith" type="text"/>
+              <input name="name" class="w-full bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" placeholder="Jane Smith" type="text" required/>
             </div>
             <div class="flex flex-col gap-2">
               <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Email</label>
-              <input class="w-full bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" placeholder="jane@email.com" type="email"/>
+              <input name="email" class="w-full bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" placeholder="jane@email.com" type="email" required/>
             </div>
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Message</label>
-            <textarea class="w-full bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all resize-none" placeholder="Your message here..." rows="5"></textarea>
+            <textarea name="message" class="w-full bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all resize-none" placeholder="Your message here..." rows="5" required></textarea>
           </div>
           <button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all" type="submit">Send Message</button>
         </form>
